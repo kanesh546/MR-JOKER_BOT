@@ -14,24 +14,24 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID =   # integer value, dont use ""
-    API_HASH = ""
-    BOT_ID = ""
-    TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1833279646  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "kavinduaj"
-    SUDO_USERS = "1833279646"
-    SUPPORT_USERS = "1833279646"
-    SUPPORT_CHAT = "lkhitech"  # Your own group for support, do not add the @
+    API_ID =  13303918 # integer value, dont use ""
+    API_HASH = "24f473f4478796b9a416e4e68b49ab25"
+    BOT_ID = "5063706531"
+    TOKEN = "5063706531:AAFeR7pzJronQkpyuYxHxCDhcGYurnQxy8c"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 916028993 # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Singleboy546"
+    SUDO_USERS = "916028993"
+    SUPPORT_USERS = "916028993"
+    SUPPORT_CHAT = "bbYiw"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001237555668
+        -1001776212077
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001237555668
+        -1001776212077
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = " postgresql://postgres:eP1tQFTZj5s57Z7RbfYU@containers-us-west-22.railway.app:7214/railway"  # needed for any database modules
     REDIS_URI = " "
     LOAD = []
     NO_LOAD = []
@@ -40,8 +40,8 @@ class Config(object):
     URL = None
     HEROKU_API_KEY = ""
     HEROKU_APP_NAME = ""
-    BOT_USERNAME = ""
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    BOT_USERNAME = "@gm_newbot"
+    SPAMWATCH_API = "uyMrTbnUfQcraw5B7Pgn3JHZLPBt_dijS5ZhbIK3rKWFkcfZTjmateY4nSgx9Ofo"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     ARQ_API_KEY = "GBVANC-POIBJH-XAYVHT-XZBPTG-ARQ"
     ARQ_API_URL = "https://thearq.tech/"
@@ -55,15 +55,15 @@ class Config(object):
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
     ALLOW_CHATS = ""
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
-    WHITELIST_USERS = get_user_list("elevated_users.json", "whitelists")
+    DRAGONS = "916028993"
+    WHITELIST_USERS = "916028993"
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = "916028993"
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = "916028993"
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "tigers")
-    WOLVES = get_user_list("elevated_users.json", "whitelists")
+    TIGERS = "916028993"
+    WOLVES = "916028993"
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
@@ -72,21 +72,21 @@ class Config(object):
     WORKERS = (
         8  # Number of subthreads to use. Set as number of threads your processor uses
     )
-    BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
+    BAN_STICKER = "CAACAgEAAxkBAAEBmkphzeVQlkYV9Xft7SNoXNDLXB2U2AACLwADnjOcH-wxu-ehy6NRHgQ"  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     CASH_API_KEY = (
-        "xyz"  # Get your API key from https://www.alphavantage.co/support/#api-key
+        "O6FGAQ3BYSIPE48P"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
-    TIME_API_KEY = "xyz"  # Get your API key from https://timezonedb.com/api
+    TIME_API_KEY = "Y3JQK0TJ6NVF"  # Get your API key from https://timezonedb.com/api
     WALL_API = (
         "xyz"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
     )
-    AI_API_KEY = ""  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
+    AI_API_KEY = "d50ac1930db5722c348d36ed5eac5e2020a6fe1ab07eb3f39658e2c44350d9c4d7f389097b92b80b28137a678159ab36fd9b944621e7e7bfaf4b68d2df508144"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-    REM_BG_API_KEY = ""
+    REM_BG_API_KEY = "THcRAj2BVa8E8urCgEFoNwz4"
     GENIUS_API_TOKEN = ""
-    MONGO_DB = ""
+    MONGO_DB = "mongodb+srv://Friday546:friday546@cluster5.opdei.mongodb.net/friday546?retryWrites=true&w=majority"
     
 
 class Production(Config):
